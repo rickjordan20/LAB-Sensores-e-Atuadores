@@ -21,4 +21,24 @@ Compreender o funcionamento dos sensores e atuadores através da experiência pr
 
 ## 4. METODOLOGIA
 
+Para construção desse circuito, iremos utilizar o detector de luminosidade presente no Kit Arduíno para disparar a camainha(Buzzer) presente no Kit. Nesse projeto, ao todo, serão utilizados os seguintes componentes:
+
+Fotocélula LDR 5mm: Sensor de luminosidade.
+• Buzzer 5V: Campainha que dispara um som quando ativada.
+◦ Corrente: ≤ 42mA;
+◦ Som de saída: ≥ 85DB;
+◦ Frequência de Resonância: 2300 ± 300HZ;
+◦ Temperatura de Operação: -20ºC ~ +45ºC;
+◦ Temperatura de armazenamento: -20ºC ~ +60ºC;
+◦ Sinalizador piezoelétrico de 12mm.
+• Resistor Filme de Carbono 10kΩ
+• Resistor Filme de Carbono 390Ω
+• Led
+
+Definição do problema:
+Utilize os componentes indicados e construa o circuito esquemático da Figura. O
+circuito deve disparar um alarme sonoro quando a luminosidade baixar de um valor determinado
+no experimento. Para ativar a campanha, considere o envio de um sinal para o pino digital número
+8. Conecte o LED no circuito da Figura 5 e escreva o valor da luminosidade medido pelo sensor.
+
 ## 5. CONCLUSÃO
