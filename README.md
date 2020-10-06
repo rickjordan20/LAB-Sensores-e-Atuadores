@@ -1,1 +1,1 @@
-# Teste-Academicos
+# LABORATÓRIO - SENSORES E ATUADORES
