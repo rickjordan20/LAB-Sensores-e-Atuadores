@@ -7,12 +7,6 @@ Disciplina: Sistema em Tempo Real e Embarcados
 
 # LABORATÓRIO - SENSORES E ATUADORES
 
-CENTRO UNIVERSITÁRIO DE BRÁSILIA
-
-Autor: Rickson Jordan P. da Silva Matos 
-Professor: Aderbal Botelho
-Disciplina: Sistema em Tempo Real e Embarcados
-
 ## 1. INTRODUÇÃO
 Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados, eles atuam gerando mais eficiência e controle de fluxo de execução. Os sensores são grandes conversores de grandezas físicas em sinais elétricos correspondentes.  Já os atuadores são os componentes que realizam a conversão das energias elétrica, hidraúlica, pneumática em energia mecânica. 
 
