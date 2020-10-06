@@ -1,5 +1,8 @@
 # LABORATÓRIO - SENSORES E ATUADORES
 
+Autor: Rickson Jordan P. da Silva Matos 
+Professor: Aderbal
+
 ## 1. INTRODUÇÃO
 Sensores são dispositivos capazes de isolar estímulos externos, enquanto atuadores executam
 tarefas que interagem com o meio. Sistemas de tempo real embarcados utilizam-se de tais
@@ -16,8 +19,8 @@ Compreender o funcionamento dos sensores e atuadores através da experiência pr
 1. Definir um valor limite de disparo adequado para a luminosidade ambiente
 2. Acender a luz do led quando passar valor limite de disparo
 3. Acionar campanhia do buzzer quando passar valor limite de disparo
+4. Mostrar valor da luminosidade medido pelo sensor
 
-
-## 4. EXERCICIO
+## 4. METODOLOGIA
 
 ## 5. CONCLUSÃO
