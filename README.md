@@ -1,11 +1,11 @@
-**CENTRO UNIVERSITÁRIO DE BRÁSILIA**
+## **CENTRO UNIVERSITÁRIO DE BRÁSILIA**
 
-Autor: Rickson Jordan P. da Silva Matos 
-Professor: Aderbal Botelho
-Disciplina: Sistema em Tempo Real e Embarcados
+- Autor: Rickson Jordan P. da Silva Matos 
+- Professor: Aderbal Botelho
+- Disciplina: Sistema em Tempo Real e Embarcados
 
 
-# LABORATÓRIO - SENSORES E ATUADORES
+## LABORATÓRIO - SENSORES E ATUADORES
 
 ## 1. INTRODUÇÃO
 Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados, eles atuam gerando mais eficiência e controle de fluxo de execução. Os sensores são grandes conversores de grandezas físicas em sinais elétricos correspondentes.  Já os atuadores são os componentes que realizam a conversão das energias elétrica, hidraúlica, pneumática em energia mecânica. 
@@ -27,7 +27,7 @@ Compreender o funcionamento dos sensores e atuadores através da experiência pr
 
 Para construção desse circuito, iremos utilizar o detector de luminosidade(fotoresistor) presente no Kit Arduíno para disparar a campainha(Buzzer) e o led presente no Kit. Nesse projeto, ao todo, serão utilizados os seguintes componentes:
 
-Fotocélula LDR 5mm: Sensor de luminosidade.
+- Fotocélula LDR 5mm: Sensor de luminosidade.
 - Buzzer 5V: Campainha que dispara um som quando ativada.
 - Corrente: ≤ 42mA;
 - Som de saída: ≥ 85DB;
@@ -35,6 +35,7 @@ Fotocélula LDR 5mm: Sensor de luminosidade.
 - Temperatura de Operação: -20ºC ~ +45ºC;
 - Temperatura de armazenamento: -20ºC ~ +60ºC;
 - Sinalizador piezoelétrico de 12mm.
+- Resistor Filme de Carbono 10kΩ
 - Resistor Filme de Carbono 10kΩ
 - Resistor Filme de Carbono 390Ω
 - Led
