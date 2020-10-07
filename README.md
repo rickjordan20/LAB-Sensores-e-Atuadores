@@ -72,13 +72,13 @@ Quanto mais luz o LDT receber, menor será a resistência, portanto mais corrent
 - 3.2. Utilizamos a estrutura condicional If (ldrValue < triggerLimit). Portanto, se a variável ldrValue for menor que 930 (número que utilizamos como referência quando o sensor estiver recebendo pouca luz) o led vermelho acenderá e o alarme será acionado, conforme explicação a seguir:
 - - 3.2.1. A função digitalWrite(ledPin, HIGHT) faz com que acenda o led vermelho.
 - - 3.2.2. Dispara o alarme, conforme explicação a seguir:
-3.2.3.1. A função tone() define um tom para o buzzer. Vamos utilizar tone(buzzerPin,1000) que gera um tom com frequência de 300Hz. (Você pode alterar este valor definindo tons diferentes para o buzzer).
-3.2.3.2. Através da função digitalWrite(ledPin, HIGH) acendemos o Led vermelho.
-3.2.3.3. Através da função delay(30) esperamos 30ms. Este valor define o tempo que o led e o buzzer ficaram ativos, gerando um tipo de bip.
-3.2.3.4. Interrompemos o som do buzzer através da função noTone().
-3.2.3.5. Através da função digitalWrite(ledPin, LOW) apagamos o Led vermelho.
-3.2.3. A função delay(ledrValue/freq) define o intervalo entre os bips. Quanto maior a incidência de luz sobre o sensor, menor será o valor de ledrValue e, portanto, menor o intervalo entre os bips, fazendo com que eles sejam emitidos de forma mais rápida. Quanto menor for a incidência de luz sobre o sensor, maior será o valor lido e, portanto, maior o intervalo entre os bips, portanto, emitidos de forma mais lenta.
-3.2.4. Já a constante freq faz com que o intervalo entre os bips sejam maiores ou menores, dependo do seu valor. Quanto maior for o seu valor, menor será o tempo de espera. Portanto os bips serão emitidos de forma mais rápida.
-3.3. Escrevemos na tela do Monitor Serial o valor da variável ldrValue através do comando Serial.printn(). O comando println() diz ao monitor que se deve pular uma linha após escrever o valor definido entre parêntesis.
-3.4. Através da função delay(130), definimos um tempo de espera de 130 ms entre cada ciclo do loop.
+- - 3.2.3.1. A função tone() define um tom para o buzzer. Vamos utilizar tone(buzzerPin,1000) que gera um tom com frequência de 300Hz. (Você pode alterar este valor definindo tons diferentes para o buzzer).
+- - 3.2.3.2. Através da função digitalWrite(ledPin, HIGH) acendemos o Led vermelho.
+- - 3.2.3.3. Através da função delay(30) esperamos 30ms. Este valor define o tempo que o led e o buzzer ficaram ativos, gerando um tipo de bip.
+- - 3.2.3.4. Interrompemos o som do buzzer através da função noTone().
+- - 3.2.3.5. Através da função digitalWrite(ledPin, LOW) apagamos o Led vermelho.
+- - 3.2.3. A função delay(ledrValue/freq) define o intervalo entre os bips. Quanto maior a incidência de luz sobre o sensor, menor será o valor de ledrValue e, portanto, menor o intervalo entre os bips, fazendo com que eles sejam emitidos de forma mais rápida. Quanto menor for a incidência de luz sobre o sensor, maior será o valor lido e, portanto, maior o intervalo entre os bips, portanto, emitidos de forma mais lenta.
+- - 3.2.4. Já a constante freq faz com que o intervalo entre os bips sejam maiores ou menores, dependo do seu valor. Quanto maior for o seu valor, menor será o tempo de espera. Portanto os bips serão emitidos de forma mais rápida.
+- - 3.3. Escrevemos na tela do Monitor Serial o valor da variável ldrValue através do comando Serial.printn(). O comando println() diz ao monitor que se deve pular uma linha após escrever o valor definido entre parêntesis.
+- - 3.4. Através da função delay(130), definimos um tempo de espera de 130 ms entre cada ciclo do loop.
 
