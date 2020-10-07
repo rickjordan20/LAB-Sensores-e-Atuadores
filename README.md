@@ -8,14 +8,14 @@
 ## LABORATÓRIO - SENSORES E ATUADORES
 
 ## 1. INTRODUÇÃO
-Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados. Em geral, os sistemas de tempo real e embarcados costumam utilizar-se de tais dispositivos para controlar todo o fluxo de execução de tarefas, seja periódica ou não, como para aumentar a eficiência de seu sistema. Os sensores são grandes conversores de grandezas físicas em sinais elétricos correspondentes capazes de isolar estímulos externos.  Já os atuadores são os componentes que realizam a conversão das energias elétrica, hidraúlica, pneumática em energia mecânica. 
+Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados. Em geral, os sistemas de tempo real e embarcados costumam utilizar-se de tais dispositivos para controlar todo o fluxo de execução de tarefas, seja periódica ou não, como para aumentar a eficiência de seu sistema. Os sensores são dispositivos conversores sensíveis à algum tipo de energia ambiente que pode ser luminosa, térmica, cinética, relacionando sempre informações sobre grandezas físicas que precisa ser mensurada(medida) em sinais elétricos correspondentes. Já os atuadores são componentes capazes de realizar a conversão da energia elétrica, hidráulica, pneumática em energia mecânica.
 
 ## 2. RESUMO
 Este trabalho visa a construção de um circuito simples com o Kit Arduíno, utilizando-se apenas de uma led e um buzzer que por sua vez, serão controlados de acordo com a intensidade da luz que incide sobre o sensor de luminosidade LDR(fotoresistor). A idéia é que quanto mais incidência de luz o LDT receber, menor será a reistência, portanto mais corrente elétrica irá fluir e mais alto será o valor lido. E quanto menos luz o LDR receber, maior será a resistância, então menos corrente elétrica irá fluir e menor será o valor lido fazendo que a campainha dispare e o led acenda.
 
 ## 3. OBJETIVOS
 ### Objetivo geral:
-Compreender o funcionamento dos sensores e atuadores através da experiência prática com componentes eletrônicos presentes no kit arduíno e testar todas as interações com seus sensores e atuadores.
+Compreender o funcionamento dos sensores e atuadores através da fundamentação teórica e experiência prática com os componentes eletrônicos presentes no kit arduíno e testar todas as interações com seus sensores e atuadores.
 
 ### Objetivo Específico:
 1. Definir um valor limite de disparo adequado para a luminosidade ambiente
