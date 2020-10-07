@@ -46,7 +46,7 @@ Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (
 
 ## 5.	Explicando o código
 
-![1 - variáveis](https://user-images.githubusercontent.com/50679775/95399139-ddfbe680-08dd-11eb-9df7-65114b521660.PNG)
+![1 - variáveis](https://user-images.githubusercontent.com/50679775/95399300-43e86e00-08de-11eb-9927-098fc19fb166.PNG)
 
 1. Começamos declarando as constantes e as variáveis do projeto.
  
