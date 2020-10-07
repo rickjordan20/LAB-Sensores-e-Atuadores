@@ -8,14 +8,14 @@
 ## LABORATÓRIO - SENSORES E ATUADORES
 
 ## 1. INTRODUÇÃO
-Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados, eles atuam gerando mais eficiência e controle de fluxo de execução. Os sensores são grandes conversores de grandezas físicas em sinais elétricos correspondentes.  Já os atuadores são os componentes que realizam a conversão das energias elétrica, hidraúlica, pneumática em energia mecânica. 
+Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados. Em geral, os sistemas de tempo real e embarcados costumam utilizar-se de tais dispositivos para controlar todo o fluxo de execução de tarefas, seja periódica ou não, como para aumentar a eficiência de seu sistema. Os sensores são grandes conversores de grandezas físicas em sinais elétricos correspondentes capazes de isolar estímulos externos.  Já os atuadores são os componentes que realizam a conversão das energias elétrica, hidraúlica, pneumática em energia mecânica. 
 
 ## 2. RESUMO
-Esse projeto visa a construção de um circuito simples, utilizando apenas uma led e um buzzer que por sua vez, são controlados de acordo a intensidade da luz que incide sobre o sensor de luminosidade LDR(fotoresistor). A idéia é que quando o fotoresistor receber a incidência de luz sobre ele menor ou igual do que o valor limite de disparo, a led acenda e a campanhia dispare.
+Este trabalho visa a construção de um circuito simples com o Kit Arduíno, utilizando-se apenas de uma led e um buzzer que por sua vez, serão controlados de acordo com a intensidade da luz que incide sobre o sensor de luminosidade LDR(fotoresistor). A idéia é que quanto mais incidência de luz o LDT receber, menor será a reistência, portanto mais corrente elétrica irá fluir e mais alto será o valor lido. E quanto menos luz o LDR receber, maior será a resistância, então menos corrente elétrica irá fluir e menor será o valor lido fazendo que a campainha dispare e o led acenda.
 
 ## 3. OBJETIVOS
 ### Objetivo geral:
-Compreender o funcionamento dos sensores e atuadores através da experiência prática com circuitos embarcados provenientes do arduíno e testar todas as interações com seus sensores e atuadores.
+Compreender o funcionamento dos sensores e atuadores através da experiência prática com componentes eletrônicos presentes no kit arduíno e testar todas as interações com seus sensores e atuadores.
 
 ### Objetivo Específico:
 1. Definir um valor limite de disparo adequado para a luminosidade ambiente
@@ -38,13 +38,9 @@ Para construção desse circuito, iremos utilizar o detector de luminosidade(fot
 - Resistor Filme de Carbono 10kΩ
 - Resistor Filme de Carbono 10kΩ
 - Resistor Filme de Carbono 390Ω
-- Led
+- LED
 
-Definição do problema:
-Utilize os componentes indicados e construa o circuito esquemático da Figura. O
-circuito deve disparar um alarme sonoro quando a luminosidade baixar de um valor determinado
-no experimento. Para ativar a campanha, considere o envio de um sinal para o pino digital número
-8. Conecte o LED no circuito da Figura 5 e escreva o valor da luminosidade medido pelo sensor.
+Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (conforme Figura 1) com o Arduino UNO e seus respectivos sensores e atuadores citados no problema, como também utilizei a linguagem C++ para elaborar um código capaz de integrar o circuito e realizar todas as ações devidas para resolução. Esse código está hospedado do GIT com os devidos comentários explicando cada parte dele, além de um roteiro dividido por sessões.
 
 ## 5.	Explicando o código
 
