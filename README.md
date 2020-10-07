@@ -44,6 +44,8 @@ Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (
 
 ## 5.	Explicando o código
 
+![1 - variáveis](https://user-images.githubusercontent.com/50679775/95390810-52c62500-08cc-11eb-8a2b-dbc27321cf03.PNG)
+
 1. Começamos declarando as constantes e as variáveis do projeto.
  
 - 1.1. Utilizamos as constantes e variáveis tipo "int" que podem contar números inteiros de -32767 até 32767.
@@ -53,12 +55,16 @@ Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (
 - 1.5. Declaramos e inicializamos a variável ldrValue como 0 (zero).
 - 1.6. Declaramos e inicializamos a constante freq como 5 (esse valor deve ser diferente de zero e poderá ser alterado para aumentar ou diminuir a frequência de bips do alarme).
 
+![2 - void](https://user-images.githubusercontent.com/50679775/95390814-53f75200-08cc-11eb-9692-53ec8564302f.PNG)
+
 2. Através da estrutura void setup(), definimos:
  
 - 2.1. A função Serial.begin() serve para dizer ao Arduino que será coletado dados para o computador a partir da porta serial e o cabo USB. O número entre os parênteses significa qual é a taxa de dados que a placa vai se comunicar com o computador. Utilizaremos a taxa padrão de 9600bps (bits-per-second).
 - 2.2. Observe que portas analógicas não precisam ser definidas, pois por padrão, já são definidas como INPUT. Entretanto, você pode utilizar a linha de código: pinMode(ldrPin, INPUT);
 - 2.3. Define-se a constante ledPin como saída do controlador Arduino (OUTPUT) conectada à porta digital 3.
 - 2.4. Define-se a constante buzzerPin como saída do controlador Arduino (OUTPUT) conectada à porta digital 7.
+
+![3 - loop](https://user-images.githubusercontent.com/50679775/95390815-53f75200-08cc-11eb-9e05-82baa8e18ac5.PNG)
 
 3. Através da estrutura void loop(), obtemos:
  
