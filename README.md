@@ -1,6 +1,6 @@
 ## **CENTRO UNIVERSITÁRIO DE BRÁSILIA**
 
-- Autor: Rickson Jordan P. da Silva Matos 
+- Aluno: Rickson Jordan P. da Silva Matos 
 - Professor: Aderbal Botelho
 - Disciplina: Sistema em Tempo Real e Embarcados
 
@@ -45,4 +45,38 @@ Utilize os componentes indicados e construa o circuito esquemático da Figura. O
 circuito deve disparar um alarme sonoro quando a luminosidade baixar de um valor determinado
 no experimento. Para ativar a campanha, considere o envio de um sinal para o pino digital número
 8. Conecte o LED no circuito da Figura 5 e escreva o valor da luminosidade medido pelo sensor.
+
+## 5.	Explicando o código
+
+1. Começamos declarando as constantes e as variáveis do projeto.
+ 
+1.1. Utilizamos as constantes e variáveis tipo "int" que podem contar números inteiros de -32767 até 32767.
+1.2. A constante do tipo inteiro nomeada buzzerPin refere-se ao buzzer que deverá estar conectado à porta digital 8 do microcontrolador Arduino.
+1.3. A constante do tipo inteiro nomeada ldrPin refere-se ao Sensor de luminosidade LDR que deverá estar conectado à porta analógica A0.
+1.4. A constante do tipo inteiro nomeada ledPin refere-se ao Led vermelho que deverá estar conectado à porta 3 do microcontrolador Arduino.
+1.5. Declaramos e inicializamos a variável ldrValue como 0 (zero).
+1.6. Declaramos e inicializamos a constante freq como 5 (esse valor deve ser diferente de zero e poderá ser alterado para aumentar ou diminuir a frequência de bips do alarme).
+2. Através da estrutura void setup(), definimos:
+ 
+2.1. A função Serial.begin() serve para dizer ao Arduino que será coletado dados para o computador a partir da porta serial e o cabo USB. O número entre os parênteses significa qual é a taxa de dados que a placa vai se comunicar com o computador. Utilizaremos a taxa padrão de 9600bps (bits-per-second).
+2.2. Observe que portas analógicas não precisam ser definidas, pois por padrão, já são definidas como INPUT. Entretanto, você pode utilizar a linha de código: pinMode(ldrPin, INPUT);
+2.3. Define-se a constante ledPin como saída do controlador Arduino (OUTPUT) conectada à porta digital 3.
+2.4. Define-se a constante buzzerPin como saída do controlador Arduino (OUTPUT) conectada à porta digital 7.
+3. Através da estrutura void loop(), obtemos:
+ 
+3.1. A variável ldrValue receberá os valores lidos e atualizados diretamente pelo pino analógico onde está conectado o sensor LDR, através da função analogRead() que faz a conversão de analógico para digital. Esta leitura é feita pelo ADC (Analog to Digital Converter - conversor analógico para digital) sem tratamento nenhum. A variável foi definida localmente como tipo inteiro (int), e portanto, vai de 0 a 1023, ou seja, possui 210 = 1024 valores inteiros (referente à resolução de 10 bits do ADC para controladores Arduino UNO, Mega e Leonardo). Assim, quando o sensor LDR não estiver recebendo pouca ou nenhuma luz do ambiente, o valor lido será próximo de zero, e quando sensor receber muita luz, o valor será próximo de 1023, fazendo assim a leitura da luminosidade de um ambiente.
+Observação: Nesse circuito, o sensor LDR varia de 0V a 5V(leitura analógica), ou seja, de 0 a 1023 quando convertido em leitura digital através do ADC do controlador Arduino.
+Quanto mais luz o LDT receber, menor será a resistência, portanto mais corrente elétrica irá fluir e mais alto será o valor lido. E quanto menos luz o LDR receber, maior será a resistência, então menos corrente elétrica irá fluir e menor será o valor lido.
+3.2. Utilizamos a estrutura condicional If (ldrValue < triggerLimit). Portanto, se a variável ldrValue for menor que 930 (número que utilizamos como referência quando o sensor estiver recebendo pouca luz) o led vermelho acenderá e o alarme será acionado, conforme explicação a seguir:
+3.2.1. A função digitalWrite(ledPin, HIGHT) faz com que acenda o led vermelho.
+3.2.2. Dispara o alarme, conforme explicação a seguir:
+3.2.3.1. A função tone() define um tom para o buzzer. Vamos utilizar tone(buzzerPin,1000) que gera um tom com frequência de 300Hz. (Você pode alterar este valor definindo tons diferentes para o buzzer).
+3.2.3.2. Através da função digitalWrite(ledPin, HIGH) acendemos o Led vermelho.
+3.2.3.3. Através da função delay(30) esperamos 30ms. Este valor define o tempo que o led e o buzzer ficaram ativos, gerando um tipo de bip.
+3.2.3.4. Interrompemos o som do buzzer através da função noTone().
+3.2.3.5. Através da função digitalWrite(ledPin, LOW) apagamos o Led vermelho.
+3.2.3. A função delay(ledrValue/freq) define o intervalo entre os bips. Quanto maior a incidência de luz sobre o sensor, menor será o valor de ledrValue e, portanto, menor o intervalo entre os bips, fazendo com que eles sejam emitidos de forma mais rápida. Quanto menor for a incidência de luz sobre o sensor, maior será o valor lido e, portanto, maior o intervalo entre os bips, portanto, emitidos de forma mais lenta.
+3.2.4. Já a constante freq faz com que o intervalo entre os bips sejam maiores ou menores, dependo do seu valor. Quanto maior for o seu valor, menor será o tempo de espera. Portanto os bips serão emitidos de forma mais rápida.
+3.3. Escrevemos na tela do Monitor Serial o valor da variável ldrValue através do comando Serial.printn(). O comando println() diz ao monitor que se deve pular uma linha após escrever o valor definido entre parêntesis.
+3.4. Através da função delay(130), definimos um tempo de espera de 130 ms entre cada ciclo do loop.
 
