@@ -11,7 +11,7 @@
 Os sensores e atuadores estão cada vez mais presentes e integrados aos sistemas operacionais de tempo real e embarcados, eles atuam gerando mais eficiência e controle de fluxo de execução. Os sensores são grandes conversores de grandezas físicas em sinais elétricos correspondentes.  Já os atuadores são os componentes que realizam a conversão das energias elétrica, hidraúlica, pneumática em energia mecânica. 
 
 ## 2. RESUMO
-Esse projeto visa a construção de um circuito simples, utilizando apenas uma led e um buzzer que por sua vez, são controlados de acordo a intensidade da luz que incidade sobre o sensor de luminosidade LDR(fotoresistor). A idéia é que quando o fotoresistor receber a incidência de luz sobre ele maior ou igual do que o valor limite de disparo, a led acenda e a campanhia dispare.
+Esse projeto visa a construção de um circuito simples, utilizando apenas uma led e um buzzer que por sua vez, são controlados de acordo a intensidade da luz que incide sobre o sensor de luminosidade LDR(fotoresistor). A idéia é que quando o fotoresistor receber a incidência de luz sobre ele menor ou igual do que o valor limite de disparo, a led acenda e a campanhia dispare.
 
 ## 3. OBJETIVOS
 ### Objetivo geral:
@@ -46,4 +46,3 @@ circuito deve disparar um alarme sonoro quando a luminosidade baixar de um valor
 no experimento. Para ativar a campanha, considere o envio de um sinal para o pino digital número
 8. Conecte o LED no circuito da Figura 5 e escreva o valor da luminosidade medido pelo sensor.
 
-## 5. CONCLUSÃO
