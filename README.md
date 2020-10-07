@@ -46,7 +46,7 @@ Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (
 
 ## 5.	Explicando o código
 
-![1 - variáveis](https://user-images.githubusercontent.com/50679775/95390810-52c62500-08cc-11eb-8a2b-dbc27321cf03.PNG)
+![1 - variáveis](https://user-images.githubusercontent.com/50679775/95399139-ddfbe680-08dd-11eb-9df7-65114b521660.PNG)
 
 1. Começamos declarando as constantes e as variáveis do projeto.
  
@@ -57,7 +57,7 @@ Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (
 - 1.5. Declaramos e inicializamos a variável ldrValue como 0 (zero).
 - 1.6. Declaramos e inicializamos a constante freq como 5 (esse valor deve ser diferente de zero e poderá ser alterado para aumentar ou diminuir a frequência de bips do alarme).
 
-![2 - void](https://user-images.githubusercontent.com/50679775/95390814-53f75200-08cc-11eb-9692-53ec8564302f.PNG)
+![2 - void](https://user-images.githubusercontent.com/50679775/95399140-de947d00-08dd-11eb-8129-072dc3ff57f0.PNG)
 
 2. Através da estrutura void setup(), definimos:
  
@@ -66,7 +66,7 @@ Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (
 - 2.3. Define-se a constante ledPin como saída do controlador Arduino (OUTPUT) conectada à porta digital 3.
 - 2.4. Define-se a constante buzzerPin como saída do controlador Arduino (OUTPUT) conectada à porta digital 7.
 
-![3 - loop](https://user-images.githubusercontent.com/50679775/95390815-53f75200-08cc-11eb-9e05-82baa8e18ac5.PNG)
+![3 - loop](https://user-images.githubusercontent.com/50679775/95399142-de947d00-08dd-11eb-8c7d-604b831f68b5.PNG)
 
 3. Através da estrutura void loop(), obtemos:
  
