@@ -42,6 +42,8 @@ Para construção desse circuito, iremos utilizar o detector de luminosidade(fot
 
 Para resolução do exercício, utilizei o Tinkerked para montagem do circuito (conforme Figura 1) com o Arduino UNO e seus respectivos sensores e atuadores citados no problema, como também utilizei a linguagem C++ para elaborar um código capaz de integrar o circuito e realizar todas as ações devidas para resolução. Esse código está hospedado do GIT com os devidos comentários explicando cada parte dele, além de um roteiro dividido por sessões.
 
+Link do projeto no Tinkerked=> https://www.tinkercad.com/things/g3xq2zsdZvv
+
 ![circuito](https://user-images.githubusercontent.com/50679775/95391087-cbc57c80-08cc-11eb-9de4-2f4b8df7033f.PNG)
 
 ## 5.	Explicando o código
